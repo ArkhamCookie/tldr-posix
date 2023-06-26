@@ -1,3 +1,3 @@
 #!/bin/sh
 
-printf "This script should be vaild and pass.\n"
+printf "This should be vaild as well\n"
