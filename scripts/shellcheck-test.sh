@@ -1,3 +1,3 @@
 #!/bin/sh
 
-printf "foo\n"
+printf "Boo\n"
