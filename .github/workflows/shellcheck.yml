@@ -1,5 +1,5 @@
 name: ShellCheck
-uses: redhat-plumbers-in-action/differential-shellcheck@v4.2.1
+uses: redhat-plumbers-in-action/differential-shellcheck@v4.2.2
 
 on:
   pull_request:
