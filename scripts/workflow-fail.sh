@@ -1,3 +1,3 @@
 #!/bin/sh
 
-printf "This script %sshould%s fail.\n" "$(tput bold)"
+printf "This script %sshouldn't%s fail anymore.\n" "$(tput bold)" "$(tput sgr0)
