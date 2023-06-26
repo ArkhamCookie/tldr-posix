@@ -1,9 +1,11 @@
-name: ShellCheck Lint
+name: Lint
 on:
+  push:
+    branches: [main]
+    paths:
+      - '**.sh'
   pull_request:
-    types:
-      - opened
-      - edited
+    branches: [main]
     paths:
       - '**.sh'
 
@@ -11,23 +13,23 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  shellcheck:
     runs-on: ubuntu-latest
-    
+
     permissions:
       security-events: write
-      
+
       actions: read
       contents: read
 
     steps:
-      - name: Repository checkout
+      - name: Repoitory Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          
-      - id: Shellcheck
-        name: Shellcheck
+
+      - id: ShellCheck
+        name: ShellCheck
         uses: redhat-plumbers-in-action/differential-shellcheck@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
