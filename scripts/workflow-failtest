@@ -1,3 +1,0 @@
-#!/bin/sh
-
-printf "This test should %sfail\n"
