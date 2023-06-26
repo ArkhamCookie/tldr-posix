@@ -1,4 +1,4 @@
-name: ShellCheck
+name: ShellCheck Lint
 on:
   pull_request:
     types:
